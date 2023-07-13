@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Survey</title>
+    <style>
+    </style>
+</head>
+<body style="background-color: antiquewhite;">
+    <h1 style="color: darkred; text-shadow: 2px 2px rgb(206, 161, 161); text-align: center;">Survey Form</h1><hr><br>
+    <form>
+        <div style="color: darkred; background-color: bisque; border: 2px double darkred; padding: 10px; max-width: 500px; box-shadow: 2px 2px brown;  margin: 10px auto;">
+        <fieldset>
+            <legend style="text-shadow: 2px 2px rgb(227, 177, 177);">Details</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" required style="border: 2px solid darkred; box-shadow: 2px 2px brown; background-color: antiquewhite; color: rgb(145, 80, 80); border-radius: 2mm;"><br><br>
+        <label for="email">Email Id:</label>
+        <input type="email" id="email" placeholder="demo@gmail.com" required style="border: 2px solid darkred; box-shadow: 2px 2px brown; background-color: antiquewhite;border-radius: 2mm;"><br><br>
+        <label for="age">Age:</label>
+        <input type="number" id="age" placeholder="Age" required style="border: 2px solid darkred; box-shadow: 2px 2px brown; background-color: antiquewhite;border-radius: 2mm;"><br><br>
+        <label for="role">Which option best describes your current role?:</label>
+        <select id="role" style="border: 2px solid darkred; box-shadow: 2px 2px brown; background-color: antiquewhite; color: rgb(145, 80, 80);border-radius: 2mm;" >
+            <option value="Student">Student</option>
+            <option value="Teacher">Teacher</option>
+            <option value="Others">Others</option>
+        </select><br><br>
+        <label for="password">Password: </label>
+        <input type="password" id="password" required style="border: 2px solid darkred; box-shadow: 2px 2px brown; background-color: antiquewhite; color: rgb(145, 80, 80);border-radius: 2mm;"><br><br>
+        </fieldset></div><br><hr><br>
+        <div style="color: darkred; background-color: bisque; border: 2px double darkred; padding: 10px; max-width: 500px; box-shadow: 2px 2px brown;  margin: 10px auto;">
+        <fieldset>
+            <legend style="text-shadow: 2px 2px rgb(227, 177, 177);">Feedback</legend>       
+        <label for="gender"> How likely is that you would recommend this course to a friend?:<br>
+            <input type="radio" name="recommend" value="maybe" style="accent-color: darkred;">
+            Maybe
+        </label>
+        <input type="radio" name="recommend" value="definitely" style="accent-color: darkred;">
+            Definitely
+        </label>
+        <input type="radio" name="recommend" value="not sure" style="accent-color: darkred;" >
+            Not Sure
+        </label><br><br>
+        <label for="language">What do you like the most about this course?:</label><br>
+        <select id="language" style="border: 2px solid darkred; box-shadow: 2px 2px brown; background-color: antiquewhite; color: rgb(145, 80, 80);border-radius: 2mm;"">
+            <option value="select">Select an option</option>
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="JS">JS</option>
+        </select><br><br>
+        <label for="Improvement"> Things that should be improved in the future (check all that apply):<br>
+            <input type="checkbox" value="Frontend" style="accent-color: darkred;">
+            Frontend
+        </label>
+        <input type="checkbox" value="Backend" style="accent-color: darkred;">
+            Backend
+        </label>
+        <input type="checkbox" value="Data Visualization" style="accent-color: darkred;">
+            Data Visualization
+        </label><br><br>
+    </fieldset>
+    </div>
+    </form><br>
+</div>
+    <hr><br>
+</body>
+</html>
